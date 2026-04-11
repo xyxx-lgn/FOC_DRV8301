@@ -1,0 +1,20 @@
+#include "LED.h"
+
+void LED_ON(void)
+{
+	HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,GPIO_PIN_SET);
+}
+
+
+void LED_OFF(void)
+{
+	HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,GPIO_PIN_RESET);
+}
+
+void LED_Turn(void)
+{
+	if(HAL_GPIO_ReadPin(GPIOC,GPIO_PIN_13)==1)
+		HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,GPIO_PIN_RESET);
+	else
+		HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,GPIO_PIN_SET);
+}

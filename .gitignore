@@ -1,0 +1,23 @@
+# Keil user-specific files
+MDK-ARM/*.uvoptx
+MDK-ARM/*.uvguix.*
+
+# JLink logs
+MDK-ARM/JLinkLog.txt
+
+# Keil build outputs
+MDK-ARM/**/*.o
+MDK-ARM/**/*.d
+MDK-ARM/**/*.crf
+MDK-ARM/**/*.axf
+MDK-ARM/**/*.hex
+MDK-ARM/**/*.map
+MDK-ARM/**/*.dep
+MDK-ARM/**/*.lnp
+MDK-ARM/**/*.htm
+MDK-ARM/**/*.iex
+MDK-ARM/**/*.lst
+
+# Temporary files
+*.bak
+*.tmp
